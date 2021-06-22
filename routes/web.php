@@ -57,7 +57,7 @@ Route::post('order_search','OrderController@order_search')->name('order_search')
 
 
 
-
+ // Auth
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
