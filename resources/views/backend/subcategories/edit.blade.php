@@ -32,10 +32,22 @@
 			        <div class="col-sm-5">
 
 			          <select name="category" id="category" class="form-control">
+
+
+
+
+
 			          	<optgroup label="Choose Category">
-					      @foreach($categories as $category)
-					        <option value="{{$category->id}}" @if($category->id == $subcategory->category_id) {{'selected'}} @endif >{{$category->name}}</option>
+
+
+
+
+					      @foreach($cities as $city)
+
+					        <option value="{{$city->id}}" @if($city->id == $leavingfrom) {{'selected'}} @endif >{{$city->name}}</option>
+
 					      @endforeach 
+
 					    </optgroup>
 			          </select>
 

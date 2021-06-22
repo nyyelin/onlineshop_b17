@@ -62,7 +62,7 @@
 			      <div class="form-group row {{ $errors->has('brand') ? 'has-error' : '' }}">
 			        <label for="inputBrand" class="col-sm-2 col-form-label">Brand</label>
 			        <div class="col-sm-5">
-  <select class="form-control form-control-md" id="inputBrand" name="brand">
+  <select class="form-control form-control-md" id="inputBrand" name="subcategory[]">
     <optgroup label="Choose Brand">
       @foreach($brands as $brand)
         <option value="{{$brand->id}}">{{$brand->name}}</option>
@@ -75,7 +75,7 @@
 			      <div class="form-group row {{ $errors->has('subcategory') ? 'has-error' : '' }}">
 			        <label for="inputSubcategory" class="col-sm-2 col-form-label">Subcategory</label>
 			        <div class="col-sm-5">
-			          <select class="form-control form-control-md" id="inputSubcategory" name="subcategory">
+			          <select class="form-control form-control-md" id="inputSubcategory" name="subcategory[]">
 			            <optgroup label="Choose Subcategory">
 			              @foreach($subcategories as $subcategory)
 			                <option value="{{$subcategory->id}}">{{$subcategory->name}}</option>
@@ -90,7 +90,7 @@
 			      <div class="form-group row">
 			        <label class="col-sm-2">Brand:</label>
 
-			        <select class="form-control col-sm-5" name="brand">
+			        <select class="form-control col-sm-5" name="subcategory[]">
 			          <optgroup label="Choose Brand">
 			            @foreach($brands as $brand)
 			              <option value="{{$brand->id}}">{{$brand->name}}</option>
@@ -102,7 +102,7 @@
 			      <div class="form-group row">
 			        <label class="col-sm-2">Subcategory:</label>
 
-			        <select class="form-control col-sm-5" name="subcategory">
+			        <select class="form-control col-sm-5" name="subcategory[]">
 			          <optgroup label="Choose Subcategory">
 			            @foreach($subcategories as $subcategory)
 			            <option value="{{$subcategory->id}}">{{$subcategory->name}}</option>

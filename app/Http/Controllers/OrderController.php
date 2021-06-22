@@ -58,12 +58,13 @@ class OrderController extends Controller
         $order->orderdate = date('Y-m-d');
         $order->note = $request->note;
         $order->total=$total;
-        $order->user_id =Auth::id();
+        $order->user_id = Auth::id();
         $order->save();
 
-foreach ($mycartArr as $row) {
-    $order->items()->attach($row->id,['qty'=>$row->qty]);
-}
+        foreach ($mycartArr as $row) {
+            $order->items()->attach($row->id,['qty'=>$row->qty]);
+        }
+        
         return "Order Success!!";
 
     }

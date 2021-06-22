@@ -43,7 +43,7 @@ class ItemController extends Controller
      */
     public function store(Request $request)
     {
-        // dd($request);
+        dd($request);
 
         // Validation
     $request->validate([
@@ -163,7 +163,23 @@ class ItemController extends Controller
     public function destroy(Item $item)
     {
         // delete method
+        dd($item);
         $item->delete();
         return redirect()->route('items.index');
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

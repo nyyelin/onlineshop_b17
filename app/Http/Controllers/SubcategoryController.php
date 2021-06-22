@@ -114,4 +114,17 @@ class SubcategoryController extends Controller
     {
         //
     }
+
+
+    public function method($id)
+    {
+        $teacher = Teacher::find($id);
+        $teacher->status->1;
+        return;
+    }
 }
+
+
+
+
+

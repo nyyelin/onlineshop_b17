@@ -38,6 +38,8 @@
                                 <!-- delete lote yin method ka post nat ma ya buu dar kout method ko delete so pe change pay ya mal update lo myoe pot -->
                                 <button class="btn btn-outline-danger "><i class="fas fa-trash"></i></button>
                             </form>
+
+                            <a href="{{route('delete_teacher',$teacher->id)}}"></a>
                         </td>            
 
                     </tr>

@@ -85,5 +85,40 @@ php artisan make:migration create_order_detail_table
 
 
 
+Payments table
+
+->id
+->student_id
+->class_id
+->academic_id
+
+->firts_installation_date
+->firts_installation_payment
+
+->second_installation_date
+->second_installation_payment ->nullable();
+
+->third_installation_date
+->third_installation_payment
+
+->total_amount
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
